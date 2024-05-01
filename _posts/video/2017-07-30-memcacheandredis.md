@@ -1,7 +1,9 @@
 ---
 layout: blog
-banana: true
-category: video
+book: true
+background: blue
+background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/48174506.jpg
+category: video+text
 title:  MedVidQA
 date:   2017-07-30 10:06:42
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-8-1/24280498.jpg

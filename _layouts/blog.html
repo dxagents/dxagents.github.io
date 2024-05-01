@@ -10,20 +10,20 @@
 <body class="" gtools_scp_screen_capture_injected="true">
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-      <a href="/?liberxue" title="访问 {{site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo-liberxue.png" alt="{{ site.title }}"> </a>
+      <a href="/?liberxue" title="{{site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo-liberxue.png" alt="{{ site.title }}"> </a>
         <div class="navbar-menu">
             {% for link in site.links %}             
             <a href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{ link.name }}</a>
                 {% endfor %}
           </div>
-        <div class="navbar-search" onclick="">
+        <!-- <div class="navbar-search" onclick="">
             <span class="icon-search"></span>
             <form id="cb-search-btn" role="search">
          <span class="search-box">
-         <input type="text" class="input" id="cb-search-content" required="true" placeholder="标题 标签..." maxlength="30" autocomplete="off">
+         <input type="text" class="input" id="cb-search-content" required="true" placeholder="..." maxlength="30" autocomplete="off">
         </span>
             </form>
-        </div>
+        </div> -->
         <div class="navbar-mobile-menu" onclick="">
             <span class="icon-menu cross"><span class="middle"></span></span>
             <ul>
@@ -42,15 +42,14 @@
 	{{ page.title }}</h1>
 		 <div class="post-data">  
 	 <time datetime="{{ page.date | date: '%F %H:%M:%S'}}" itemprop="datePublished">发布时间：{{ page.date | date: "%F %H:%M:%S"}}</time>
-     <a href="/tags#{{ page.category }}" title="访问 {{ page.category }}" data-hover="博客分类: {{ page.category }}">博客分类: {{ page.category }}</a>
-    <!-- <a href="#read"> 阅读次数: comments</a>  -->
+     <a href="/tags#{{ page.category }}" title="{{ page.category }}" data-hover="{{ page.category }}">{{ page.category }}</a>
 			</div>
             <div class="post-tags">
                 {% unless page.tags == empty %}
       {% assign tags_list = page.tags %}
       {% if tags_list.first[0] == null %}
       {% for tag in tags_list %} 
-          <a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+          <a href="/tags#{{ tag }}" title="{{ tag }}" data-hover="{{ tag }}">
           {{ tag }} <span>({{ site.tags[tag].size }})</span>
           {% unless forloop.last %}{% endunless %}
 </a>
@@ -82,13 +81,13 @@
       {% assign tags_list = page.tags %}
       {% if tags_list.first[0] == null %}
       {% for tag in tags_list %} 
-          <a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+          <a href="/tags#{{ tag }}" title="{{ tag }}" data-hover="{{ tag }}">
           {{ tag }} <span>({{ site.tags[tag].size }})</span>
           {% unless forloop.last %}{% endunless %}</a>
       {% endfor %}
       {% else %}
       {% for tag in tags_list %} 
-          <a href="/tags#{{ tag[0] }}" title="访问{{ tag[0] }}"  data-hover="{{ tag[0] }}">
+          <a href="/tags#{{ tag[0] }}" title="{{ tag[0] }}"  data-hover="{{ tag[0] }}">
             {{ tag[0] }} <span>({{ tag[1].size }})</span>
             {% unless forloop.last %}{% endunless %}
           </a>
