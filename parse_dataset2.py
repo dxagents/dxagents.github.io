@@ -100,7 +100,8 @@ category: {category}
 
             elif dataset == 'pmc-vqa':
                 question = data["question"]
-                options = {'A': data['opa'], 'B': data['opb'], 'C': data['opc'], 'D': data['opd']}
+                options = {'A': data['opa'].split(':')[1].strip(), 'B': data['opb'].split(':')[1].strip(), 'C': data['opc'].split(':')[1].strip(), 'D': data['opd'].split(':')[1].strip()}
+            
             elif dataset == 'path-vqa':
                 question = data["question"]
                 options = {'A': 'yes', 'B': 'no'}
