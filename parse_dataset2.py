@@ -139,6 +139,11 @@ category: {category}
 
     # Variables
     jsonl_file_path = '/Users/ybkim95/dxagents.github.io/dataset/{}/test.jsonl'.format(dataset)
+    
+    if dataset == 'medqa':
+        jsonl_file_path2 = '/Users/ybkim95/dxagents.github.io/dataset/{}/train.jsonl'.format(dataset)
+        
+
     form_endpoint = "https://getform.io/f/1569b998-160a-45dd-a9e1-a2babfbdecb5"
     if dataset == 'medqa':
         output_path = "/Users/ybkim95/dxagents.github.io/_posts/text/2024-05-01-medqa.md"
@@ -155,6 +160,9 @@ category: {category}
 
     # Read the .jsonl file
     jsonl_lines = read_jsonl_file(jsonl_file_path)
+    
+    if dataset == 'medqa':
+        jsonl_lines += read_jsonl_file(jsonl_file_path2)
 
     # Generate the markdown form
     markdown_form = generate_markdown_form(jsonl_lines, form_endpoint)
