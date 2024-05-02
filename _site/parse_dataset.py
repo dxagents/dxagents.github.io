@@ -81,6 +81,13 @@ category: image+text
         for line in jsonl_file:
             data = json.loads(line)
 
+            if dataset in ['path-vqa', 'pmc-vqa']:
+              img_path = data.get('image_path', '')
+              if img_path:
+                  md_file.write(f"![Image](/dataset/{dataset}/images/{img_path})\n\n")
+
+              
+            
             question = data.get('question', 'No question provided')
             answer = data.get('answer', 'No answer provided')
             # answer_idx = data.get('answer_idx', 'No answer provided')

@@ -32,7 +32,7 @@ LLLLLLLLLLLLLLLLLLLLLLLLiiiiiiiibbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr 
   <meta name="twitter:keywords"  content="PMC-VQA - " property='og:description' />
   <meta property="og:type" content="article">
   <meta property="og:title" content="PMC-VQA - ">
-  <meta name="og:keywords"  content="PMC-VQA - |Question 1What does the diffusion-weighted images of axial lesions show? (A) High signal intensity (B) Mid signal int..." property='og:description' />
+  <meta name="og:keywords"  content="PMC-VQA - |Medical QuizPlease enter your unique ID and answer all questions below:  Unique ID:  Instructions: Given the medical ..." property='og:description' />
   <meta name="theme-Jekyll by liberxue" content="#eb5055"> 
   <link rel="icon" type="image/png" href="http://localhost:4000/style/favicons/favicon.ico" />
   <link href="http://localhost:4000/style/favicons/favicon.ico" rel="shortcut icon" type="image/png">
@@ -41,13 +41,13 @@ LLLLLLLLLLLLLLLLLLLLLLLLiiiiiiiibbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr 
   <meta charset="UTF-8">  
   <link rel="manifest" href="/manifest.json">
   <link rel="shortcut icon" href="http://localhost:4000/style/favicons/favicon.ico" type="image/x-icon">
-  <meta name="keywords"  content="Question 1What does the diffusion-weighted images of axial lesions show? (A) High signal intensity (B) Mid signal int..." property='og:description' />
+  <meta name="keywords"  content="Medical QuizPlease enter your unique ID and answer all questions below:  Unique ID:  Instructions: Given the medical ..." property='og:description' />
   <meta name="description" content="nothing is more practicla than a good theory" />
   <link href="https://cdn.bootcss.com/highlight.js/9.10.0/styles/xcode.min.css" rel="stylesheet">
   <link href="http://localhost:4000/style/style-liberxue.css" rel="stylesheet">
 
   <meta content='http://localhost:4000/2024/04/27/pmc-vqa.html' property='og:url' />
-  <meta content="http://localhost:4000/2024/04/27/pmc-vqa.html|Question 1What does the diffusion-weighted images of axial lesions show? (A) High signal intensity (B) Mid signal int..." property='og:description' />
+  <meta content="http://localhost:4000/2024/04/27/pmc-vqa.html|Medical QuizPlease enter your unique ID and answer all questions below:  Unique ID:  Instructions: Given the medical ..." property='og:description' />
   <meta content="article" property="og:type" />
 
 
@@ -116,186 +116,501 @@ LLLLLLLLLLLLLLLLLLLLLLLLiiiiiiiibbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr 
          <p class="post-tags">
      
 </p>
-<h2 id="question-1">Question 1</h2>
-<p>What does the diffusion-weighted images of axial lesions show? 
-(A) High signal intensity (B) Mid signal intensity (C) Low signal intensity (D) No signal intensity</p>
+<h2 id="medical-quiz">Medical Quiz</h2>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8423087_f3.jpg" alt="Image" /></p>
+<p>Please enter your unique ID and answer all questions below:</p>
 
-<h2 id="answer">Answer</h2>
-<p>(A) High signal intensity</p>
+<form id="quizForm" action="https://getform.io/f/1569b998-160a-45dd-a9e1-a2babfbdecb5" method="POST">
 
-<h2 id="question-2">Question 2</h2>
-<p>What did the arrow in figure 1-D point towards? 
-(A) A dilated left ventricle, (B) A dilated right ventricle, (C) A small left ventricle, (D) A normal-sized left ventricle.</p>
+  Unique ID:<br />
+  <input type="text" name="unique_id" style="background-color: #D3D3D3;" required="" /><br /><br />
+<p><b>Instructions:</b> Given the medical questions below, you need to first provide your answer among the options. Next, for the difficulty/complexity of each question, please select among the following options:</p>
+<ol><li><b>Low:</b> a PCP or general physician can answer this question without consulting a specialist.</li>
+<li><b>Moderate:</b> a PCP or general physician can answer this question in consultation with a specialist, and a single specialist can answer this question.</li>
+<li><b>High:</b> A team of multi-departmental specialists can answer this question, which requires specialists consulting to another department (Requires team effort to treat the case).</li></ol>
+<p><b>Question 1</b>:  What does the diffusion-weighted images of axial lesions show? </p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8684250_Fig1.jpg" alt="Image" /></p>
+<img src="/dataset/pmc-vqa/images/PMC8423087_f3.jpg" alt="Image" />
 
-<h2 id="answer-1">Answer</h2>
-<p>(D) A normal-sized left ventricle.</p>
 
-<h2 id="question-3">Question 3</h2>
-<p>What is the medical condition shown in the image? 
-(A) Spondylosis (B) Spondylolisthesis (C) Herniated disc (D) Spinal stenosis</p>
+  <input type="radio" id="q1A" name="Q1_answer" value="A" required="" />
+  <label for="q1A">(A)  A: High signal intensity </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8159338_FIG1.jpg" alt="Image" /></p>
+  <input type="radio" id="q1B" name="Q1_answer" value="B" required="" />
+  <label for="q1B">(B)  B: Mid signal intensity </label><br />
 
-<h2 id="answer-2">Answer</h2>
-<p>(B) Spondylolisthesis</p>
+  <input type="radio" id="q1C" name="Q1_answer" value="C" required="" />
+  <label for="q1C">(C)  C: Low signal intensity </label><br />
 
-<h2 id="question-4">Question 4</h2>
-<p>What does the image of Gross Sectioned Myelolipoma demonstrate? 
-(A) fibrosis (red arrow) (B) inflammation (red arrow) (C) hemorrhage (red arrow) (D) calcification (red arrow)</p>
+  <input type="radio" id="q1D" name="Q1_answer" value="D" required="" />
+  <label for="q1D">(D)  D: No signal intensity </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8452227_FIG10.jpg" alt="Image" /></p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low1" name="Q1_complexity" value="Low" required="" />
+  <label for="low1">Low</label><br />
+  <input type="radio" id="moderate1" name="Q1_complexity" value="Moderate" required="" />
+  <label for="moderate1">Moderate</label><br />
+  <input type="radio" id="high1" name="Q1_complexity" value="High" required="" />
+  <label for="high1">High</label><br /><br />
+<p><b>Question 2</b>:  What did the arrow in figure 1-D point towards? </p>
 
-<h2 id="answer-3">Answer</h2>
-<p>(C) hemorrhage (red arrow)</p>
+<img src="/dataset/pmc-vqa/images/PMC8684250_Fig1.jpg" alt="Image" />
 
-<h2 id="question-5">Question 5</h2>
-<p>What can we infer from the MRI image? 
-(A) The patient has a tumor, (B) The patient is pregnant, (C) The patient underwent surgery, (D) No conclusion can be made from the MRI image.</p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8424505_f0010.jpg" alt="Image" /></p>
+  <input type="radio" id="q2A" name="Q2_answer" value="A" required="" />
+  <label for="q2A">(A)  A: A dilated left ventricle, </label><br />
 
-<h2 id="answer-4">Answer</h2>
-<p>(D) No conclusion can be made from the MRI image.</p>
+  <input type="radio" id="q2B" name="Q2_answer" value="B" required="" />
+  <label for="q2B">(B)  B: A dilated right ventricle, </label><br />
 
-<h2 id="question-6">Question 6</h2>
-<p>What is the imaging modality used in this study? 
-(A) CT scan (B) MRI (C) X-ray (D) PET</p>
+  <input type="radio" id="q2C" name="Q2_answer" value="C" required="" />
+  <label for="q2C">(C)  C: A small left ventricle, </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8428167_FIG5.jpg" alt="Image" /></p>
+  <input type="radio" id="q2D" name="Q2_answer" value="D" required="" />
+  <label for="q2D">(D)  D: A normal-sized left ventricle. </label><br />
 
-<h2 id="answer-5">Answer</h2>
-<p>(B) MRI</p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low2" name="Q2_complexity" value="Low" required="" />
+  <label for="low2">Low</label><br />
+  <input type="radio" id="moderate2" name="Q2_complexity" value="Moderate" required="" />
+  <label for="moderate2">Moderate</label><br />
+  <input type="radio" id="high2" name="Q2_complexity" value="High" required="" />
+  <label for="high2">High</label><br /><br />
+<p><b>Question 3</b>:  What is the medical condition shown in the image? </p>
 
-<h2 id="question-7">Question 7</h2>
-<p>What does Image A show? 
-(A) A normal appearance of mean transit time. (B) Abnormal cerebral blood volume. (C) Abnormal mean transit time. (D) Normal cerebral blood volume.</p>
+<img src="/dataset/pmc-vqa/images/PMC8159338_FIG1.jpg" alt="Image" />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8931818_f6.jpg" alt="Image" /></p>
 
-<h2 id="answer-6">Answer</h2>
-<p>(D) Normal cerebral blood volume.</p>
+  <input type="radio" id="q3A" name="Q3_answer" value="A" required="" />
+  <label for="q3A">(A)  A: Spondylosis </label><br />
 
-<h2 id="question-8">Question 8</h2>
-<p>What imaging techniques were used to detect the lobulated liver lesions? 
-(A) MRI (B) CT (C) PET (D) X-ray</p>
+  <input type="radio" id="q3B" name="Q3_answer" value="B" required="" />
+  <label for="q3B">(B)  B: Spondylolisthesis </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8416894_F1.jpg" alt="Image" /></p>
+  <input type="radio" id="q3C" name="Q3_answer" value="C" required="" />
+  <label for="q3C">(C)  C: Herniated disc </label><br />
 
-<h2 id="answer-7">Answer</h2>
-<p>(A) MRI</p>
+  <input type="radio" id="q3D" name="Q3_answer" value="D" required="" />
+  <label for="q3D">(D)  D: Spinal stenosis </label><br />
 
-<h2 id="question-9">Question 9</h2>
-<p>What color represents fluid in the image? 
-(A) White (B) Black (C) Grey (D) The color varies depending on what kind of fluid is shown.</p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low3" name="Q3_complexity" value="Low" required="" />
+  <label for="low3">Low</label><br />
+  <input type="radio" id="moderate3" name="Q3_complexity" value="Moderate" required="" />
+  <label for="moderate3">Moderate</label><br />
+  <input type="radio" id="high3" name="Q3_complexity" value="High" required="" />
+  <label for="high3">High</label><br /><br />
+<p><b>Question 4</b>:  What does the image of Gross Sectioned Myelolipoma demonstrate? </p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8930273_fig3.jpg" alt="Image" /></p>
+<img src="/dataset/pmc-vqa/images/PMC8452227_FIG10.jpg" alt="Image" />
 
-<h2 id="answer-8">Answer</h2>
-<p>(B) Black</p>
 
-<h2 id="question-10">Question 10</h2>
-<p>What part of the brain was shown in picture a? 
-(A) The cerebrum (B) The cerebellum (C) The brainstem (D) The spinal cord</p>
+  <input type="radio" id="q4A" name="Q4_answer" value="A" required="" />
+  <label for="q4A">(A)  A: fibrosis (red arrow) </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8437475_f0007.jpg" alt="Image" /></p>
+  <input type="radio" id="q4B" name="Q4_answer" value="B" required="" />
+  <label for="q4B">(B)  B: inflammation (red arrow) </label><br />
 
-<h2 id="answer-9">Answer</h2>
-<p>(A) The cerebrum</p>
+  <input type="radio" id="q4C" name="Q4_answer" value="C" required="" />
+  <label for="q4C">(C)  C: hemorrhage (red arrow) </label><br />
 
-<h2 id="question-11">Question 11</h2>
-<p>What is the interpretation of the red regions in the MRI image shown? 
-(A) They indicate areas of local volume loss with increasing radiation dose (B) They show the places where Jacobian determinants were obtained (C) They indicate areas that were unaffected by radiation therapy (D) They indicate areas of local volume increase with increasing radiation dose</p>
+  <input type="radio" id="q4D" name="Q4_answer" value="D" required="" />
+  <label for="q4D">(D)  D: calcification (red arrow) </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8416633_f0005.jpg" alt="Image" /></p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low4" name="Q4_complexity" value="Low" required="" />
+  <label for="low4">Low</label><br />
+  <input type="radio" id="moderate4" name="Q4_complexity" value="Moderate" required="" />
+  <label for="moderate4">Moderate</label><br />
+  <input type="radio" id="high4" name="Q4_complexity" value="High" required="" />
+  <label for="high4">High</label><br /><br />
+<p><b>Question 5</b>: What can we infer from the MRI image? </p>
 
-<h2 id="answer-10">Answer</h2>
-<p>(D) They indicate areas of local volume increase with increasing radiation dose</p>
+<img src="/dataset/pmc-vqa/images/PMC8424505_f0010.jpg" alt="Image" />
 
-<h2 id="question-12">Question 12</h2>
-<p>What does the T2-weighted MR image show? 
-(A) A small lesion with poor-circumscribed margin and low signal intensity (B) A small lesion with well-circumscribed margin and high signal intensity (C) A large lesion with poor-circumscribed margin and high signal intensity (D) A large lesion with well-circumscribed margin and low signal intensity</p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8430610_ijerph-18-08895-f004.jpg" alt="Image" /></p>
+  <input type="radio" id="q5A" name="Q5_answer" value="A" required="" />
+  <label for="q5A">(A)  A: The patient has a tumor, </label><br />
 
-<h2 id="answer-11">Answer</h2>
-<p>(B) A small lesion with well-circumscribed margin and high signal intensity</p>
+  <input type="radio" id="q5B" name="Q5_answer" value="B" required="" />
+  <label for="q5B">(B)  B: The patient is pregnant, </label><br />
 
-<h2 id="question-13">Question 13</h2>
-<p>Which part of the cornea is affected by the infiltrate in the picture? 
-(A) Center of the cornea (B) Peripheral cornea (C) Superior cornea (D) Inferior cornea</p>
+  <input type="radio" id="q5C" name="Q5_answer" value="C" required="" />
+  <label for="q5C">(C)  C: The patient underwent surgery, </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8680372_Fig2.jpg" alt="Image" /></p>
+  <input type="radio" id="q5D" name="Q5_answer" value="D" required="" />
+  <label for="q5D">(D)  D: No conclusion can be made from the MRI image. </label><br />
 
-<h2 id="answer-12">Answer</h2>
-<p>(B) Peripheral cornea</p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low5" name="Q5_complexity" value="Low" required="" />
+  <label for="low5">Low</label><br />
+  <input type="radio" id="moderate5" name="Q5_complexity" value="Moderate" required="" />
+  <label for="moderate5">Moderate</label><br />
+  <input type="radio" id="high5" name="Q5_complexity" value="High" required="" />
+  <label for="high5">High</label><br /><br />
+<p><b>Question 6</b>:  What is the imaging modality used in this study? </p>
 
-<h2 id="question-14">Question 14</h2>
-<p>What did the patient’s evaluation indicate?
-(A) Obesity (B) Concurrent deep vein thrombosis in the left leg (C) Varicose veins of the left leg (D) Pulsatile regurgitation</p>
+<img src="/dataset/pmc-vqa/images/PMC8428167_FIG5.jpg" alt="Image" />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8417160_Fig1.jpg" alt="Image" /></p>
 
-<h2 id="answer-13">Answer</h2>
-<p>(D) Pulsatile regurgitation</p>
+  <input type="radio" id="q6A" name="Q6_answer" value="A" required="" />
+  <label for="q6A">(A)  A: CT scan </label><br />
 
-<h2 id="question-15">Question 15</h2>
-<p>What does the yellow arrow indicate in the MRI image? 
-(A) The subchondral collapse in the superolateral aspect of the right femoral head. (B) The subchondral collapse in the inferomedial aspect of the left femoral head. (C) The abnormality in the sacrum bone. (D) The abnormality in the left iliac bone.</p>
+  <input type="radio" id="q6B" name="Q6_answer" value="B" required="" />
+  <label for="q6B">(B)  B: MRI </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8666159_FIG7.jpg" alt="Image" /></p>
+  <input type="radio" id="q6C" name="Q6_answer" value="C" required="" />
+  <label for="q6C">(C)  C: X-ray </label><br />
 
-<h2 id="answer-14">Answer</h2>
-<p>(A) The subchondral collapse in the superolateral aspect of the right femoral head.</p>
+  <input type="radio" id="q6D" name="Q6_answer" value="D" required="" />
+  <label for="q6D">(D)  D: PET </label><br />
 
-<h2 id="question-16">Question 16</h2>
-<p>What imaging modality was used to detect the mass? 
-(A) X-ray (B) Magnetic resonance imaging (MRI) (C) Computed tomography (CT) (D) Ultrasound</p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low6" name="Q6_complexity" value="Low" required="" />
+  <label for="low6">Low</label><br />
+  <input type="radio" id="moderate6" name="Q6_complexity" value="Moderate" required="" />
+  <label for="moderate6">Moderate</label><br />
+  <input type="radio" id="high6" name="Q6_complexity" value="High" required="" />
+  <label for="high6">High</label><br /><br />
+<p><b>Question 7</b>: What does Image A show? </p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8437670_fig2.jpg" alt="Image" /></p>
+<img src="/dataset/pmc-vqa/images/PMC8931818_f6.jpg" alt="Image" />
 
-<h2 id="answer-15">Answer</h2>
-<p>(A) X-ray</p>
 
-<h2 id="question-17">Question 17</h2>
-<p>What does the white dotted line in figure C outline? 
-(A) grey matter (B) white matter (C) bleeding area (D) NeuN-positive cells</p>
+  <input type="radio" id="q7A" name="Q7_answer" value="A" required="" />
+  <label for="q7A">(A)  A: A normal appearance of mean transit time. </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8419714_DMM049053F4.jpg" alt="Image" /></p>
+  <input type="radio" id="q7B" name="Q7_answer" value="B" required="" />
+  <label for="q7B">(B)  B: Abnormal cerebral blood volume. </label><br />
 
-<h2 id="answer-16">Answer</h2>
-<p>(A) grey matter</p>
+  <input type="radio" id="q7C" name="Q7_answer" value="C" required="" />
+  <label for="q7C">(C)  C: Abnormal mean transit time. </label><br />
 
-<h2 id="question-18">Question 18</h2>
-<p>What does image (B) represent? 
-(A) Merge of red and green fluorescence channels and bright field (B) Green fluorescence channel (C) Red fluorescence channel (D) Bright field</p>
+  <input type="radio" id="q7D" name="Q7_answer" value="D" required="" />
+  <label for="q7D">(D)  D: Normal cerebral blood volume. </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8436938_f9.jpg" alt="Image" /></p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low7" name="Q7_complexity" value="Low" required="" />
+  <label for="low7">Low</label><br />
+  <input type="radio" id="moderate7" name="Q7_complexity" value="Moderate" required="" />
+  <label for="moderate7">Moderate</label><br />
+  <input type="radio" id="high7" name="Q7_complexity" value="High" required="" />
+  <label for="high7">High</label><br /><br />
+<p><b>Question 8</b>:  What imaging techniques were used to detect the lobulated liver lesions? </p>
 
-<h2 id="answer-17">Answer</h2>
-<p>(B) Green fluorescence channel</p>
+<img src="/dataset/pmc-vqa/images/PMC8416894_F1.jpg" alt="Image" />
 
-<h2 id="question-19">Question 19</h2>
-<p>What did the FLAIR sequence show in (b)? 
-(A) Hypointense signal in cortical anterobasal frontal lobes (B) Hyperintense signal in cortical anterobasal frontal lobes (C) Isointense signal in cortical anterobasal frontal lobes (D) Mixed intensity signal in cortical anterobasal frontal lobes</p>
 
-<p><img src="/dataset/pmc-vqa/images/PMC8922148_fig3.jpg" alt="Image" /></p>
+  <input type="radio" id="q8A" name="Q8_answer" value="A" required="" />
+  <label for="q8A">(A)  A: MRI </label><br />
 
-<h2 id="answer-18">Answer</h2>
-<p>(B) Hyperintense signal in cortical anterobasal frontal lobes</p>
+  <input type="radio" id="q8B" name="Q8_answer" value="B" required="" />
+  <label for="q8B">(B)  B: CT </label><br />
 
-<h2 id="question-20">Question 20</h2>
-<p>What layer of the stomach wall was the tumor mainly in? 
-(A) Mucosa layer (B) Submucosa layer (C) Muscular layer (D) Serosa layer</p>
+  <input type="radio" id="q8C" name="Q8_answer" value="C" required="" />
+  <label for="q8C">(C)  C: PET </label><br />
 
-<p><img src="/dataset/pmc-vqa/images/PMC8667358_Fig1.jpg" alt="Image" /></p>
+  <input type="radio" id="q8D" name="Q8_answer" value="D" required="" />
+  <label for="q8D">(D)  D: X-ray </label><br />
 
-<h2 id="answer-19">Answer</h2>
-<p>(B) Submucosa layer</p>
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low8" name="Q8_complexity" value="Low" required="" />
+  <label for="low8">Low</label><br />
+  <input type="radio" id="moderate8" name="Q8_complexity" value="Moderate" required="" />
+  <label for="moderate8">Moderate</label><br />
+  <input type="radio" id="high8" name="Q8_complexity" value="High" required="" />
+  <label for="high8">High</label><br /><br />
+<p><b>Question 9</b>: What color represents fluid in the image? </p>
 
+<img src="/dataset/pmc-vqa/images/PMC8930273_fig3.jpg" alt="Image" />
+
+
+  <input type="radio" id="q9A" name="Q9_answer" value="A" required="" />
+  <label for="q9A">(A) A:White </label><br />
+
+  <input type="radio" id="q9B" name="Q9_answer" value="B" required="" />
+  <label for="q9B">(B)  B:Black </label><br />
+
+  <input type="radio" id="q9C" name="Q9_answer" value="C" required="" />
+  <label for="q9C">(C)  C:Grey </label><br />
+
+  <input type="radio" id="q9D" name="Q9_answer" value="D" required="" />
+  <label for="q9D">(D)  D:The color varies depending on what kind of fluid is shown. </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low9" name="Q9_complexity" value="Low" required="" />
+  <label for="low9">Low</label><br />
+  <input type="radio" id="moderate9" name="Q9_complexity" value="Moderate" required="" />
+  <label for="moderate9">Moderate</label><br />
+  <input type="radio" id="high9" name="Q9_complexity" value="High" required="" />
+  <label for="high9">High</label><br /><br />
+<p><b>Question 10</b>:  What part of the brain was shown in picture a? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8437475_f0007.jpg" alt="Image" />
+
+
+  <input type="radio" id="q10A" name="Q10_answer" value="A" required="" />
+  <label for="q10A">(A)  A: The cerebrum </label><br />
+
+  <input type="radio" id="q10B" name="Q10_answer" value="B" required="" />
+  <label for="q10B">(B)  B: The cerebellum </label><br />
+
+  <input type="radio" id="q10C" name="Q10_answer" value="C" required="" />
+  <label for="q10C">(C)  C: The brainstem </label><br />
+
+  <input type="radio" id="q10D" name="Q10_answer" value="D" required="" />
+  <label for="q10D">(D)  D: The spinal cord </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low10" name="Q10_complexity" value="Low" required="" />
+  <label for="low10">Low</label><br />
+  <input type="radio" id="moderate10" name="Q10_complexity" value="Moderate" required="" />
+  <label for="moderate10">Moderate</label><br />
+  <input type="radio" id="high10" name="Q10_complexity" value="High" required="" />
+  <label for="high10">High</label><br /><br />
+<p><b>Question 11</b>:  What is the interpretation of the red regions in the MRI image shown? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8416633_f0005.jpg" alt="Image" />
+
+
+  <input type="radio" id="q11A" name="Q11_answer" value="A" required="" />
+  <label for="q11A">(A)  A:They indicate areas of local volume loss with increasing radiation dose </label><br />
+
+  <input type="radio" id="q11B" name="Q11_answer" value="B" required="" />
+  <label for="q11B">(B)  B:They show the places where Jacobian determinants were obtained </label><br />
+
+  <input type="radio" id="q11C" name="Q11_answer" value="C" required="" />
+  <label for="q11C">(C)  C:They indicate areas that were unaffected by radiation therapy </label><br />
+
+  <input type="radio" id="q11D" name="Q11_answer" value="D" required="" />
+  <label for="q11D">(D)  D:They indicate areas of local volume increase with increasing radiation dose </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low11" name="Q11_complexity" value="Low" required="" />
+  <label for="low11">Low</label><br />
+  <input type="radio" id="moderate11" name="Q11_complexity" value="Moderate" required="" />
+  <label for="moderate11">Moderate</label><br />
+  <input type="radio" id="high11" name="Q11_complexity" value="High" required="" />
+  <label for="high11">High</label><br /><br />
+<p><b>Question 12</b>:  What does the T2-weighted MR image show? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8430610_ijerph-18-08895-f004.jpg" alt="Image" />
+
+
+  <input type="radio" id="q12A" name="Q12_answer" value="A" required="" />
+  <label for="q12A">(A)  A: A small lesion with poor-circumscribed margin and low signal intensity </label><br />
+
+  <input type="radio" id="q12B" name="Q12_answer" value="B" required="" />
+  <label for="q12B">(B)  B: A small lesion with well-circumscribed margin and high signal intensity </label><br />
+
+  <input type="radio" id="q12C" name="Q12_answer" value="C" required="" />
+  <label for="q12C">(C)  C: A large lesion with poor-circumscribed margin and high signal intensity </label><br />
+
+  <input type="radio" id="q12D" name="Q12_answer" value="D" required="" />
+  <label for="q12D">(D)  D: A large lesion with well-circumscribed margin and low signal intensity </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low12" name="Q12_complexity" value="Low" required="" />
+  <label for="low12">Low</label><br />
+  <input type="radio" id="moderate12" name="Q12_complexity" value="Moderate" required="" />
+  <label for="moderate12">Moderate</label><br />
+  <input type="radio" id="high12" name="Q12_complexity" value="High" required="" />
+  <label for="high12">High</label><br /><br />
+<p><b>Question 13</b>:  Which part of the cornea is affected by the infiltrate in the picture? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8680372_Fig2.jpg" alt="Image" />
+
+
+  <input type="radio" id="q13A" name="Q13_answer" value="A" required="" />
+  <label for="q13A">(A)  A: Center of the cornea </label><br />
+
+  <input type="radio" id="q13B" name="Q13_answer" value="B" required="" />
+  <label for="q13B">(B)  B: Peripheral cornea </label><br />
+
+  <input type="radio" id="q13C" name="Q13_answer" value="C" required="" />
+  <label for="q13C">(C)  C: Superior cornea </label><br />
+
+  <input type="radio" id="q13D" name="Q13_answer" value="D" required="" />
+  <label for="q13D">(D)  D: Inferior cornea </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low13" name="Q13_complexity" value="Low" required="" />
+  <label for="low13">Low</label><br />
+  <input type="radio" id="moderate13" name="Q13_complexity" value="Moderate" required="" />
+  <label for="moderate13">Moderate</label><br />
+  <input type="radio" id="high13" name="Q13_complexity" value="High" required="" />
+  <label for="high13">High</label><br /><br />
+<p><b>Question 14</b>:  What did the patient's evaluation indicate?</p>
+
+<img src="/dataset/pmc-vqa/images/PMC8417160_Fig1.jpg" alt="Image" />
+
+
+  <input type="radio" id="q14A" name="Q14_answer" value="A" required="" />
+  <label for="q14A">(A)  A:Obesity </label><br />
+
+  <input type="radio" id="q14B" name="Q14_answer" value="B" required="" />
+  <label for="q14B">(B)  B:Concurrent deep vein thrombosis in the left leg </label><br />
+
+  <input type="radio" id="q14C" name="Q14_answer" value="C" required="" />
+  <label for="q14C">(C)  C:Varicose veins of the left leg </label><br />
+
+  <input type="radio" id="q14D" name="Q14_answer" value="D" required="" />
+  <label for="q14D">(D)  D:Pulsatile regurgitation </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low14" name="Q14_complexity" value="Low" required="" />
+  <label for="low14">Low</label><br />
+  <input type="radio" id="moderate14" name="Q14_complexity" value="Moderate" required="" />
+  <label for="moderate14">Moderate</label><br />
+  <input type="radio" id="high14" name="Q14_complexity" value="High" required="" />
+  <label for="high14">High</label><br /><br />
+<p><b>Question 15</b>:  What does the yellow arrow indicate in the MRI image? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8666159_FIG7.jpg" alt="Image" />
+
+
+  <input type="radio" id="q15A" name="Q15_answer" value="A" required="" />
+  <label for="q15A">(A)  A: The subchondral collapse in the superolateral aspect of the right femoral head. </label><br />
+
+  <input type="radio" id="q15B" name="Q15_answer" value="B" required="" />
+  <label for="q15B">(B)  B: The subchondral collapse in the inferomedial aspect of the left femoral head. </label><br />
+
+  <input type="radio" id="q15C" name="Q15_answer" value="C" required="" />
+  <label for="q15C">(C)  C: The abnormality in the sacrum bone. </label><br />
+
+  <input type="radio" id="q15D" name="Q15_answer" value="D" required="" />
+  <label for="q15D">(D)  D: The abnormality in the left iliac bone. </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low15" name="Q15_complexity" value="Low" required="" />
+  <label for="low15">Low</label><br />
+  <input type="radio" id="moderate15" name="Q15_complexity" value="Moderate" required="" />
+  <label for="moderate15">Moderate</label><br />
+  <input type="radio" id="high15" name="Q15_complexity" value="High" required="" />
+  <label for="high15">High</label><br /><br />
+<p><b>Question 16</b>:  What imaging modality was used to detect the mass? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8437670_fig2.jpg" alt="Image" />
+
+
+  <input type="radio" id="q16A" name="Q16_answer" value="A" required="" />
+  <label for="q16A">(A)  A: X-ray </label><br />
+
+  <input type="radio" id="q16B" name="Q16_answer" value="B" required="" />
+  <label for="q16B">(B)  B: Magnetic resonance imaging (MRI) </label><br />
+
+  <input type="radio" id="q16C" name="Q16_answer" value="C" required="" />
+  <label for="q16C">(C)  C: Computed tomography (CT) </label><br />
+
+  <input type="radio" id="q16D" name="Q16_answer" value="D" required="" />
+  <label for="q16D">(D)  D: Ultrasound </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low16" name="Q16_complexity" value="Low" required="" />
+  <label for="low16">Low</label><br />
+  <input type="radio" id="moderate16" name="Q16_complexity" value="Moderate" required="" />
+  <label for="moderate16">Moderate</label><br />
+  <input type="radio" id="high16" name="Q16_complexity" value="High" required="" />
+  <label for="high16">High</label><br /><br />
+<p><b>Question 17</b>:  What does the white dotted line in figure C outline? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8419714_DMM049053F4.jpg" alt="Image" />
+
+
+  <input type="radio" id="q17A" name="Q17_answer" value="A" required="" />
+  <label for="q17A">(A)  A: grey matter </label><br />
+
+  <input type="radio" id="q17B" name="Q17_answer" value="B" required="" />
+  <label for="q17B">(B)  B: white matter </label><br />
+
+  <input type="radio" id="q17C" name="Q17_answer" value="C" required="" />
+  <label for="q17C">(C)  C: bleeding area </label><br />
+
+  <input type="radio" id="q17D" name="Q17_answer" value="D" required="" />
+  <label for="q17D">(D)  D: NeuN-positive cells </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low17" name="Q17_complexity" value="Low" required="" />
+  <label for="low17">Low</label><br />
+  <input type="radio" id="moderate17" name="Q17_complexity" value="Moderate" required="" />
+  <label for="moderate17">Moderate</label><br />
+  <input type="radio" id="high17" name="Q17_complexity" value="High" required="" />
+  <label for="high17">High</label><br /><br />
+<p><b>Question 18</b>:  What does image (B) represent? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8436938_f9.jpg" alt="Image" />
+
+
+  <input type="radio" id="q18A" name="Q18_answer" value="A" required="" />
+  <label for="q18A">(A)  A: Merge of red and green fluorescence channels and bright field </label><br />
+
+  <input type="radio" id="q18B" name="Q18_answer" value="B" required="" />
+  <label for="q18B">(B)  B: Green fluorescence channel </label><br />
+
+  <input type="radio" id="q18C" name="Q18_answer" value="C" required="" />
+  <label for="q18C">(C)  C: Red fluorescence channel </label><br />
+
+  <input type="radio" id="q18D" name="Q18_answer" value="D" required="" />
+  <label for="q18D">(D)  D: Bright field </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low18" name="Q18_complexity" value="Low" required="" />
+  <label for="low18">Low</label><br />
+  <input type="radio" id="moderate18" name="Q18_complexity" value="Moderate" required="" />
+  <label for="moderate18">Moderate</label><br />
+  <input type="radio" id="high18" name="Q18_complexity" value="High" required="" />
+  <label for="high18">High</label><br /><br />
+<p><b>Question 19</b>: What did the FLAIR sequence show in (b)? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8922148_fig3.jpg" alt="Image" />
+
+
+  <input type="radio" id="q19A" name="Q19_answer" value="A" required="" />
+  <label for="q19A">(A)  A:Hypointense signal in cortical anterobasal frontal lobes </label><br />
+
+  <input type="radio" id="q19B" name="Q19_answer" value="B" required="" />
+  <label for="q19B">(B)  B:Hyperintense signal in cortical anterobasal frontal lobes </label><br />
+
+  <input type="radio" id="q19C" name="Q19_answer" value="C" required="" />
+  <label for="q19C">(C)  C:Isointense signal in cortical anterobasal frontal lobes </label><br />
+
+  <input type="radio" id="q19D" name="Q19_answer" value="D" required="" />
+  <label for="q19D">(D)  D:Mixed intensity signal in cortical anterobasal frontal lobes </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low19" name="Q19_complexity" value="Low" required="" />
+  <label for="low19">Low</label><br />
+  <input type="radio" id="moderate19" name="Q19_complexity" value="Moderate" required="" />
+  <label for="moderate19">Moderate</label><br />
+  <input type="radio" id="high19" name="Q19_complexity" value="High" required="" />
+  <label for="high19">High</label><br /><br />
+<p><b>Question 20</b>:  What layer of the stomach wall was the tumor mainly in? </p>
+
+<img src="/dataset/pmc-vqa/images/PMC8667358_Fig1.jpg" alt="Image" />
+
+
+  <input type="radio" id="q20A" name="Q20_answer" value="A" required="" />
+  <label for="q20A">(A)  A:Mucosa layer </label><br />
+
+  <input type="radio" id="q20B" name="Q20_answer" value="B" required="" />
+  <label for="q20B">(B)  B:Submucosa layer </label><br />
+
+  <input type="radio" id="q20C" name="Q20_answer" value="C" required="" />
+  <label for="q20C">(C)  C:Muscular layer </label><br />
+
+  <input type="radio" id="q20D" name="Q20_answer" value="D" required="" />
+  <label for="q20D">(D)  D:Serosa layer </label><br />
+
+<p>Please rate the complexity of this question:</p>
+  <input type="radio" id="low20" name="Q20_complexity" value="Low" required="" />
+  <label for="low20">Low</label><br />
+  <input type="radio" id="moderate20" name="Q20_complexity" value="Moderate" required="" />
+  <label for="moderate20">Moderate</label><br />
+  <input type="radio" id="high20" name="Q20_complexity" value="High" required="" />
+  <label for="high20">High</label><br /><br />
+<button type="submit" id="submitButton" abled="">Submit</button>
+
+</form>
 
 		<p class="post-info">
 			<!-- 本文由 <a href="/">liberxue</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为:2024-04-27 00:00:00</p> -->
