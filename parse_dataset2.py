@@ -66,7 +66,7 @@ category: {category}
         markdown_content.append(f'<form id="quizForm" action="{form_endpoint}" method="POST">\n')
         markdown_content.append(f'  Unique ID:<br>')
         markdown_content.append(f'  <input type="text" name="unique_id" value="{dataset}_" style="background-color: #D3D3D3;" required><br><br>')
-        markdown_content.append("<p><b>Instructions:</b> Given the medical questions below, you need to first provide your answer among the options. Next, for the difficulty/complexity of each question, please select among the following options:</p>")
+        markdown_content.append("<p><b>Instructions:</b> Given the medical questions below, return the medical difficulty/complexity of each question, please select among the following options:</p>")
         markdown_content.append("<ol><li><b>Low:</b> a PCP or general physician can answer this question without consulting a specialist.</li>")
         markdown_content.append("<li><b>Moderate:</b> a PCP or general physician can answer this question in consultation with a specialist, and a single specialist can answer this question.</li>")
         markdown_content.append("<li><b>High:</b> A team of multi-departmental specialists can answer this question, which requires specialists consulting to another department (Requires team effort to treat the case).</li></ol>")
