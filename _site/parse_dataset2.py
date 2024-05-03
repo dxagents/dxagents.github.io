@@ -64,8 +64,8 @@ category: {category}
         markdown_content.append("## Medical Quiz\n")
         markdown_content.append("Please enter your unique ID and answer all questions below:\n")
         markdown_content.append(f'<form id="quizForm" action="{form_endpoint}" method="POST">\n')
-        markdown_content.append('  Unique ID:<br>')
-        markdown_content.append('  <input type="text" name="unique_id" style="background-color: #D3D3D3;" required><br><br>')
+        markdown_content.append(f'  Unique ID:<br>')
+        markdown_content.append(f'  <input type="text" name="unique_id" value="{dataset}_" style="background-color: #D3D3D3;" required><br><br>')
         markdown_content.append("<p><b>Instructions:</b> Given the medical questions below, you need to first provide your answer among the options. Next, for the difficulty/complexity of each question, please select among the following options:</p>")
         markdown_content.append("<ol><li><b>Low:</b> a PCP or general physician can answer this question without consulting a specialist.</li>")
         markdown_content.append("<li><b>Moderate:</b> a PCP or general physician can answer this question in consultation with a specialist, and a single specialist can answer this question.</li>")
@@ -100,7 +100,8 @@ category: {category}
 
             elif dataset == 'pmc-vqa':
                 question = data["question"]
-                options = {'A': data['opa'], 'B': data['opb'], 'C': data['opc'], 'D': data['opd']}
+                options = {'A': data['opa'].split(':')[1].strip(), 'B': data['opb'].split(':')[1].strip(), 'C': data['opc'].split(':')[1].strip(), 'D': data['opd'].split(':')[1].strip()}
+            
             elif dataset == 'path-vqa':
                 question = data["question"]
                 options = {'A': 'yes', 'B': 'no'}
@@ -112,10 +113,13 @@ category: {category}
             if dataset == 'path-vqa':
                 markdown_content.append(f'<img src="/dataset/{dataset}/images/{img_path}.jpg" alt="Image">\n\n')
 
-
             for option_key, option_value in options.items():
-                markdown_content.append(f'  <input type="radio" id="q{question_number}{option_key}" name="Q{question_number}_answer" value="{option_key}" required>')
-                markdown_content.append(f'  <label for="q{question_number}{option_key}">({option_key}) {option_value}</label><br>\n')
+                markdown_content.append(f'({option_key}) {option_value}<br>\n')
+            
+        
+            # for option_key, option_value in options.items():
+            #     markdown_content.append(f'  <input type="radio" id="q{question_number}{option_key}" name="Q{question_number}_answer" value="{option_key}" required>')
+            #     markdown_content.append(f'  <label for="q{question_number}{option_key}">({option_key}) {option_value}</label><br>\n')
             
             # Complexity options for each question
             markdown_content.append('<p>Please rate the complexity of this question:</p>')
@@ -137,7 +141,11 @@ category: {category}
             file.write(content)
 
     # Variables
-    jsonl_file_path = '/Users/ybkim95/dxagents.github.io/dataset/{}/test.jsonl'.format(dataset)
+    jsonl_file_path = '/Users/ybkim95/dxagents.github.io/dataset/{}/test.jsonl'.format(dataset) 
+    
+    if dataset == 'medqa':
+        jsonl_file_path2 = '/Users/ybkim95/dxagents.github.io/dataset/{}/train.jsonl'.format(dataset)
+        
     form_endpoint = "https://getform.io/f/1569b998-160a-45dd-a9e1-a2babfbdecb5"
     if dataset == 'medqa':
         output_path = "/Users/ybkim95/dxagents.github.io/_posts/text/2024-05-01-medqa.md"
@@ -154,6 +162,9 @@ category: {category}
 
     # Read the .jsonl file
     jsonl_lines = read_jsonl_file(jsonl_file_path)
+    
+    if dataset == 'medqa':
+        jsonl_lines += read_jsonl_file(jsonl_file_path2)
 
     # Generate the markdown form
     markdown_form = generate_markdown_form(jsonl_lines, form_endpoint)

@@ -113,10 +113,13 @@ category: {category}
             if dataset == 'path-vqa':
                 markdown_content.append(f'<img src="/dataset/{dataset}/images/{img_path}.jpg" alt="Image">\n\n')
 
-
             for option_key, option_value in options.items():
-                markdown_content.append(f'  <input type="radio" id="q{question_number}{option_key}" name="Q{question_number}_answer" value="{option_key}" required>')
-                markdown_content.append(f'  <label for="q{question_number}{option_key}">({option_key}) {option_value}</label><br>\n')
+                markdown_content.append(f'({option_key}) {option_value}<br>\n')
+            
+        
+            # for option_key, option_value in options.items():
+            #     markdown_content.append(f'  <input type="radio" id="q{question_number}{option_key}" name="Q{question_number}_answer" value="{option_key}" required>')
+            #     markdown_content.append(f'  <label for="q{question_number}{option_key}">({option_key}) {option_value}</label><br>\n')
             
             # Complexity options for each question
             markdown_content.append('<p>Please rate the complexity of this question:</p>')
